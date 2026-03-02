@@ -96,4 +96,5 @@ technova-staging/
 ├── incident-report.txt
 └── SECURITY.md
 
-
+## Status
+Completed as part of hands-on Linux security training
