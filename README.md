@@ -76,7 +76,7 @@ This- Tested access restrictions intentionally (lockout test)
 
 ---
 
-## 🔎 Security Improvements Implemented
+##  Security Improvements Implemented
 
 - Eliminated shared admin model
 - Enforced sudo-based access control
