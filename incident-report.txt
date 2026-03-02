@@ -1,0 +1,26 @@
+=== INCIDENT REPORT ===
+
+Analyst: Waad
+Date: 2026-03-02
+
+--- Summary ---
+Multiple ERROR and FATAL entries were detected in the application logs.
+
+--- Critical Finding ---
+FATAL rm -rf /var/www/staging executed by admin
+
+This indicates a destructive command was executed using the admin account.
+
+--- Root Cause ---
+Shared admin credentials.
+No audit trail.
+Overly permissive file permissions (777).
+
+--- Impact ---
+Staging environment deleted.
+
+--- Action Taken ---
+Rebuilt project structure.
+Applied secure permissions.
+Removed world-writable access.
+Enforced least privilege model.
